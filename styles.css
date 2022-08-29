@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    overflow-x: hidden;
+}
+
+.header-image {
+    background-position: center center;
+    margin: 1.5rem 0;
+}
+
+h1 {
+    font-weight: 300;
+    font-family: 'Libre Franklin', sans-serif;
+    color: hsl(0, 0%, 59%);
+}
+
+h1 > span {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+p {
+    font-size: 20px;
+    color: hsl(209, 33%, 12%);
+    font-family: 'Libre Franklin', sans-serif;
+    margin: .8rem 0;
+}
+
+form {
+    margin: 2rem 0 3rem 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#email {
+    padding: 13px 30px;
+    border-radius: 30px;
+    width: 320px;
+    border: 1px solid hsl(0, 0%, 59%);
+    outline: none;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+.error {
+    border: none;
+    font-size: 11px;
+    text-align: left;
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    padding: 13px 30px;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-left: .25rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: hsl(228, 45%, 44%) 0px 10px 40px -12px,
+                hsl(228, 45%, 44%) 0px 10px 26px -18px;
+}
+
+.dashboard {
+    width: 35%;
+    height: 45%;
+    background-image: url(./images/illustration-dashboard.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+i {
+    padding: 8px;
+    color: hsl(223, 87%, 63%);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+}
+
+.foot {
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+    .header-image {
+        margin: 4rem 0 2rem 0;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    form {
+        display: block;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem auto 1rem auto;
+    }
+
+    #email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 10px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .dashboard {
+        width: 80%;
+        height: 50%;
+        margin-bottom: 4rem;
+    }
+
+    .social-links {
+        gap: .5rem;
+        font-size: 10px;
+    }
+
+    .foot {
+        font-size: 10px;
+    }
+}
