@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    overflow-x: hidden;
+}
+
+main {
+    width: 60%;
+    height: 80%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5rem;
+}
+
+.header-image {
+    background-position: center center;
+    margin: 2.5rem 0;
+}
+
+h1 {
+    font-weight: 300;
+    font-family: 'Libre Franklin', sans-serif;
+    color: hsl(0, 0%, 59%);
+    font-size: 2.1rem;
+}
+
+h1 > span {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+h2 {
+    font-size: 20px;
+    color: hsl(209, 33%, 12%);
+    font-family: 'Libre Franklin', sans-serif;
+    margin: .8rem 0;
+    font-weight: 300;
+}
+
+form {
+    margin: 1rem 0 0 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: .5rem;
+    position: relative;
+}
+
+input,
+#btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    width: 37%;
+    border: 1px solid hsl(0, 0%, 59%);
+    outline: none;
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 12px;
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    font-weight: 300;
+    display: none;
+}
+
+.error h3 {
+    display: block;
+    padding: 0;
+    position: absolute;
+    margin-bottom: 0;
+    bottom: -1.5rem;
+    left: 25%;
+    font-weight: 600;
+}
+
+.error #email {
+    border-color: hsl(354, 100%, 66%);
+}
+
+#btn {
+    width: 15%;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-left: .25rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: hsl(228, 45%, 44%) 0px 10px 40px -12px,
+                hsl(228, 45%, 44%) 0px 10px 26px -18px;
+}
+
+.dashboard {
+    width: 60%;
+    height: 60%;
+    background-image: url(./images/illustration-dashboard.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+i {
+    padding: 8px;
+    color: hsl(223, 87%, 63%);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+}
+
+.foot {
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .header-image {
+        margin: 4rem 0 1rem 0;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 2rem auto 0rem auto;
+        gap: 1rem;
+        position: static;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    #btn {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .error h3 {
+        display: block;
+        padding: 0;
+        position: static;
+        font-size: 10px;
+        margin-top: -1rem;
+    }
+    
+    .error #email {
+        border-color: hsl(354, 100%, 66%);
+    }
+
+    .dashboard {
+        width: 80%;
+        height: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .social-links {
+        gap: .5rem;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .foot {
+        font-size: 10px;
+    }
+
+    .attribution {
+        font-size: 10px;
+        text-align: center;
+    }
+}
