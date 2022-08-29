@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
+  <script defer src="script.js"></script>
+
   <link rel="stylesheet" href="styles.css">
 
   <title>Frontend Mentor | Ping coming soon page</title>
@@ -24,17 +26,20 @@
 
   <h1>We are launching <span>soon!</span></h1>
 
-  <p>
+  <h2>
     Subscribe and get notified
-  </p>
+</h2>
 
   <form action="#" id="form">
 
-    <input type="email" name="email" id="email" placeholder="Your email address..." />
+    <input type="email"
+    name="email"
+    id="email"
+    placeholder="Your email address..." />
 
-    <button>Notify Me</button>
+    <h3>Please provide a valid email address</h3>
 
-    <p class="error hide">Please provide a valid email address</p>
+    <input type="submit" id="btn" value="Notify Me">
 
   </form>
 
@@ -57,6 +62,5 @@
       Coded by <a href="https://github.com/codewithmide/ping-coming-soon-page">Olumide Micheal</a>.
     </p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
